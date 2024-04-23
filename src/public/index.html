@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Manager</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://kit.fontawesome.com/a3d2686c01.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1 id="logo">Password Manager</h1>
+    <div id="line"></div>
+    <div class="insert-container">
+      <h2>Insert new password</h2>
+      <input
+        type="text"
+        id="nameInput"
+        placeholder="Password Name"
+        maxlength="25"
+        spellcheck="false"
+      />
+      <input
+        type="text"
+        id="emailInput"
+        placeholder="E-Mail/Username"
+        maxlength="40"
+        spellcheck="false"
+      />
+      <input
+        type="text"
+        id="passwordInput"
+        placeholder="Password"
+        maxlength="40"
+        spellcheck="false"
+      />
+      <button class="done-button">Done</button>
+      <button class="cancel-button">Cancel</button>
+    </div>
+    <div id="passwords-container"></div>
+    <div class="buttons-container">
+      <button class="new-password-button">
+        <i class="fa-solid fa-plus fa-2x" style="color: #98da4b"></i>
+      </button>
+      <button>
+        <i class="fa-solid fa-file-arrow-down fa-2x" style="color: #98da4b"></i>
+      </button>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
